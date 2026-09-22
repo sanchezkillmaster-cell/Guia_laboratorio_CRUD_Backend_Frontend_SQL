@@ -1,3 +1,4 @@
+import React from 'react';
 import { Package, Pencil, Trash2 } from 'lucide-react';
 import { urlImagen } from '../utils/format';
 
@@ -28,7 +29,7 @@ export default function TeamTable({ equipos, canDelete, onEdit, onDelete }) {
               <div className="equipo-card-body">
                 <h3>{equipo.nombre}</h3>
                 <p className="equipo-card-meta">
-                  {equipo.marca || 'Sin marca'} • {equipo.modelo || 'Sin modelo'}
+                  {equipo.marca || 'Sin marca'} · {equipo.modelo || 'Sin modelo'}
                 </p>
               </div>
 

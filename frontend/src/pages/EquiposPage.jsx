@@ -1,5 +1,5 @@
-import { useEffect, useState } from 'react';
-import Navbar from '../components/navbar';
+import React,{ useEffect, useState } from 'react';
+import Navbar from '../components/Navbar';
 import TeamForm from '../components/TeamForm';
 import TeamTable from '../components/TeamTable';
 import { useAuth } from '../hooks/useAuth';
@@ -64,7 +64,7 @@ export default function EquiposPage() {
       <main className="container">
         <header className="page-header">
           <h1>CRUD de equipos</h1>
-          <p>Sesión: {user?.email} - Rol: <strong>{user?.rol}</strong></p>
+          <p>Sesión: {user?.email} · Rol: <strong>{user?.rol}</strong></p>
         </header>
 
         {error && <p className="error">{error}</p>}

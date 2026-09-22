@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { ImagePlus, Plus, Save, X } from 'lucide-react';
 import { urlImagen } from '../utils/format';
 

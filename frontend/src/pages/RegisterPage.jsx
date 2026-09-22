@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { AlertCircle, Eye, EyeOff, Lock, UserPlus } from 'lucide-react';
 import { register } from '../services/auth.service';
@@ -37,8 +37,8 @@ export default function RegisterPage() {
 
         {error && <p className="error"><AlertCircle size={16} />{error}</p>}
 
-        <input name="nombre" placeholder="Nombre" value={form.nombre} onChange={change} required />
-        <input name="email" type="email" placeholder="Correo" value={form.email} onChange={change} required />
+        <input name="nombre"placeholder="Nombre"value={form.nombre}onChange={change}required/>
+        <input name="email" type="email" placeholder="Correo" value={form.email} onChange={change} required/>
         <div className="field">
           <Lock size={16} />
           <input
